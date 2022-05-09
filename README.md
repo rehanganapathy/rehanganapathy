@@ -6,9 +6,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rehanganapathy&label=Profile%20views&color=0e75b6&style=flat" alt="rehanganapathy" /> </p>
 
-<p align="left"> <a href="https://twitter.com/rehangmu_1710" target="blank"><img src="https://img.shields.io/twitter/follow/rehangmu_1710?logo=twitter&style=for-the-badge" alt="rehangmu_1710" /></a> </p>
 
-- 👯 I’m looking to collaborate on **Anything at all, ping me!**
+
+- 👯 I’m looking to collaborate on **Some Challenging stuff, ping me!**
 
 - All my links at [https://linktr.ee/rehanganapathy](https://linktr.ee/rehanganapathy)
 
