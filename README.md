@@ -1,82 +1,105 @@
-<div style="font-family: var(--font-mono); background: #0d0d0d; border-radius: var(--border-radius-lg); padding: 0; overflow: hidden; border: 0.5px solid #333; min-height: 520px;">
+<svg width="680" height="420" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Rehan Ganapathy - GitHub Profile Terminal</title>
+  <desc>A terminal-style GitHub profile card for rehanganapathy</desc>
 
-  <div style="background: #1a1a1a; padding: 10px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 0.5px solid #333;">
-    <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f57;"></div>
-    <div style="width: 12px; height: 12px; border-radius: 50%; background: #febc2e;"></div>
-    <div style="width: 12px; height: 12px; border-radius: 50%; background: #28c840;"></div>
-    <span style="margin-left: 8px; font-size: 12px; color: #888; letter-spacing: 0.05em;">claude — rehanganapathy — 80×24</span>
-  </div>
+  <!-- Terminal window background -->
+  <rect x="0" y="0" width="680" height="420" rx="12" fill="#0d1117"/>
 
-  <div style="padding: 20px 24px; color: #e0e0e0; font-size: 13px; line-height: 2;">
+  <!-- Title bar -->
+  <rect x="0" y="0" width="680" height="40" rx="12" fill="#161b22"/>
+  <rect x="0" y="28" width="680" height="12" fill="#161b22"/>
 
-    <div style="margin-bottom: 6px;">
-      <span style="color: #cc99ff;">rehan</span><span style="color: #888;">@</span><span style="color: #7ec8e3;">github</span><span style="color: #888;">:</span><span style="color: #ffd700;">~</span><span style="color: #888;">$</span>
-      <span style="color: #fff; margin-left: 8px;">cat profile.md</span>
-    </div>
+  <!-- Traffic lights -->
+  <circle cx="24" cy="20" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="20" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="20" r="6" fill="#28c840"/>
 
-    <div style="border-left: 2px solid #333; padding-left: 16px; margin: 8px 0 20px; color: #ccc;">
-      <div style="color: #28c840; font-size: 15px; font-weight: 600; margin-bottom: 2px;">▶ On a mission to learn!</div>
-      <div style="color: #888; font-size: 11px;">mission_statement.txt</div>
-    </div>
+  <!-- Title bar text -->
+  <text x="340" y="25" text-anchor="middle" font-family="'SF Mono', 'Fira Code', 'Cascadia Code', monospace" font-size="12" fill="#8b949e">rehanganapathy — bash — 80×24</text>
 
-    <div style="margin-bottom: 6px;">
-      <span style="color: #cc99ff;">rehan</span><span style="color: #888;">@</span><span style="color: #7ec8e3;">github</span><span style="color: #888;">:</span><span style="color: #ffd700;">~</span><span style="color: #888;">$</span>
-      <span style="color: #fff; margin-left: 8px;">whoami --details</span>
-    </div>
+  <!-- Line 1: prompt + command -->
+  <text x="20" y="72" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#58a6ff">rehan</text>
+  <text x="64" y="72" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">@</text>
+  <text x="76" y="72" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#3fb950">github</text>
+  <text x="128" y="72" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">:</text>
+  <text x="136" y="72" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e3b341">~</text>
+  <text x="148" y="72" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">$</text>
+  <text x="162" y="72" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#c9d1d9"> cat mission.txt</text>
 
-    <div style="margin: 8px 0 20px; padding-left: 16px;">
-      <div><span style="color: #7ec8e3; min-width: 140px; display: inline-block;">collaborating</span><span style="color: #fff;">→ some challenging stuff, ping me!</span></div>
-      <div><span style="color: #7ec8e3; min-width: 140px; display: inline-block;">links</span><span style="color: #cc99ff; cursor: pointer;" onclick="openLink('https://linktr.ee/rehanganapathy')">linktr.ee/rehanganapathy</span></div>
-      <div><span style="color: #7ec8e3; min-width: 140px; display: inline-block;">email</span><span style="color: #ffd700;">rehanganapathy1710@gmail.com</span></div>
-    </div>
+  <!-- Output: mission -->
+  <rect x="20" y="82" width="4" height="24" rx="1" fill="#3fb950" opacity="0.6"/>
+  <text x="32" y="100" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#3fb950" font-weight="bold">On a mission to learn!</text>
 
-    <div style="margin-bottom: 6px;">
-      <span style="color: #cc99ff;">rehan</span><span style="color: #888;">@</span><span style="color: #7ec8e3;">github</span><span style="color: #888;">:</span><span style="color: #ffd700;">~</span><span style="color: #888;">$</span>
-      <span style="color: #fff; margin-left: 8px;">connect --list-socials</span>
-    </div>
+  <!-- Line 2: prompt + command -->
+  <text x="20" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#58a6ff">rehan</text>
+  <text x="64" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">@</text>
+  <text x="76" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#3fb950">github</text>
+  <text x="128" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">:</text>
+  <text x="136" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e3b341">~</text>
+  <text x="148" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">$</text>
+  <text x="162" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#c9d1d9"> whoami --verbose</text>
 
-    <div style="margin: 8px 0 20px; padding-left: 16px; display: flex; flex-direction: column; gap: 6px;">
+  <!-- Output: details -->
+  <text x="32" y="156" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#79c0ff">collaborate</text>
+  <text x="116" y="156" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">  →  </text>
+  <text x="158" y="156" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#c9d1d9">some challenging stuff, ping me!</text>
 
-      <div style="display: flex; align-items: center; gap: 10px; cursor: pointer;" onclick="openLink('https://twitter.com/rehangmu_1710')">
-        <span style="color: #1d9bf0; font-size: 14px;">twitter</span>
-        <span style="color: #555;">──</span>
-        <span style="color: #aaa;">@rehangmu_1710</span>
-        <span style="color: #444; font-size: 11px; margin-left: 4px;">↗</span>
-      </div>
+  <text x="32" y="176" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#79c0ff">links</text>
+  <text x="116" y="176" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">       →  </text>
+  <text x="158" y="176" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#a5d6ff">linktr.ee/rehanganapathy</text>
 
-      <div style="display: flex; align-items: center; gap: 10px; cursor: pointer;" onclick="openLink('https://www.linkedin.com/in/rehan-ganapathy-663a88217/')">
-        <span style="color: #0a66c2; font-size: 14px;">linkedin</span>
-        <span style="color: #555;">──</span>
-        <span style="color: #aaa;">rehan-ganapathy-663a88217</span>
-        <span style="color: #444; font-size: 11px; margin-left: 4px;">↗</span>
-      </div>
+  <text x="32" y="196" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#79c0ff">email</text>
+  <text x="116" y="196" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">       →  </text>
+  <text x="158" y="196" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e3b341">rehanganapathy1710@gmail.com</text>
 
-      <div style="display: flex; align-items: center; gap: 10px; cursor: pointer;" onclick="openLink('https://instagram.com/rehan_ganapathy')">
-        <span style="color: #e1306c; font-size: 14px;">instagram</span>
-        <span style="color: #555;">──</span>
-        <span style="color: #aaa;">@rehan_ganapathy</span>
-        <span style="color: #444; font-size: 11px; margin-left: 4px;">↗</span>
-      </div>
+  <!-- Line 3: prompt + connect -->
+  <text x="20" y="226" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#58a6ff">rehan</text>
+  <text x="64" y="226" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">@</text>
+  <text x="76" y="226" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#3fb950">github</text>
+  <text x="128" y="226" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">:</text>
+  <text x="136" y="226" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e3b341">~</text>
+  <text x="148" y="226" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">$</text>
+  <text x="162" y="226" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#c9d1d9"> connect --list-socials</text>
 
-    </div>
+  <!-- Social output rows -->
+  <!-- Twitter -->
+  <text x="32" y="252" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#1d9bf0">twitter</text>
+  <text x="90" y="252" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#484f58">    ──────  </text>
+  <text x="200" y="252" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">@rehangmu_1710</text>
 
-    <div style="margin-bottom: 6px;">
-      <span style="color: #cc99ff;">rehan</span><span style="color: #888;">@</span><span style="color: #7ec8e3;">github</span><span style="color: #888;">:</span><span style="color: #ffd700;">~</span><span style="color: #888;">$</span>
-      <span style="color: #fff; margin-left: 8px;">profile-views --badge</span>
-    </div>
+  <!-- LinkedIn -->
+  <text x="32" y="272" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#0a66c2">linkedin</text>
+  <text x="96" y="272" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#484f58">    ──────  </text>
+  <text x="206" y="272" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">rehan-ganapathy-663a88217</text>
 
-    <div style="margin: 8px 0 20px; padding-left: 16px;">
-      <span style="background: #1a3a5c; color: #7ec8e3; font-size: 12px; padding: 3px 10px; border-radius: 4px; border: 0.5px solid #1d6096;">Profile views: loading...</span>
-    </div>
+  <!-- Instagram -->
+  <text x="32" y="292" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e1306c">instagram</text>
+  <text x="102" y="292" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#484f58">    ──────  </text>
+  <text x="212" y="292" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">@rehan_ganapathy</text>
 
-    <div style="display: flex; align-items: center; gap: 6px;">
-      <span style="color: #cc99ff;">rehan</span><span style="color: #888;">@</span><span style="color: #7ec8e3;">github</span><span style="color: #888;">:</span><span style="color: #ffd700;">~</span><span style="color: #888;">$</span>
-      <span style="display: inline-block; width: 8px; height: 14px; background: #e0e0e0; animation: blink 1s step-end infinite; margin-left: 6px;"></span>
-    </div>
+  <!-- Line 4: profile views -->
+  <text x="20" y="322" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#58a6ff">rehan</text>
+  <text x="64" y="322" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">@</text>
+  <text x="76" y="322" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#3fb950">github</text>
+  <text x="128" y="322" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">:</text>
+  <text x="136" y="322" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e3b341">~</text>
+  <text x="148" y="322" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">$</text>
+  <text x="162" y="322" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#c9d1d9"> profile-views --badge</text>
 
-  </div>
-</div>
+  <!-- Badge output -->
+  <rect x="32" y="334" width="178" height="24" rx="4" fill="#1f2937"/>
+  <rect x="32" y="334" width="90" height="24" rx="0" fill="#374151"/>
+  <rect x="32" y="334" width="8" height="24" rx="4" fill="#374151"/>
+  <text x="80" y="351" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="11" fill="#e5e7eb">Profile views</text>
+  <text x="166" y="351" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="11" fill="#60a5fa">loading...</text>
 
-<style>
-@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-</style>
+  <!-- Final prompt with cursor -->
+  <text x="20" y="396" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#58a6ff">rehan</text>
+  <text x="64" y="396" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">@</text>
+  <text x="76" y="396" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#3fb950">github</text>
+  <text x="128" y="396" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">:</text>
+  <text x="136" y="396" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e3b341">~</text>
+  <text x="148" y="396" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#8b949e">$</text>
+  <!-- Static cursor block (no animation, GitHub doesn't support it) -->
+  <rect x="164" y="382" width="8" height="16" rx="1" fill="#c9d1d9" opacity="0.8"/>
+</svg>
